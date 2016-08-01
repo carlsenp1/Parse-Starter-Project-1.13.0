@@ -1,0 +1,71 @@
+<!--
+  ~ Copyright (c) 2015-present, Parse, LLC.
+  ~ All rights reserved.
+  ~
+  ~ This source code is licensed under the BSD-style license found in the
+  ~ LICENSE file in the root directory of this source tree. An additional grant
+  ~ of patent rights can be found in the PATENTS file in the same directory.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity"
+    android:background="#ffffff"
+    android:id="@+id/relativeLayout">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:focusableInTouchMode="false"
+         />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:hint="username" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:hint="password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:id="@+id/signUpButton"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="11dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="signUpOrLogIn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:id="@+id/changeSignUpMode"
+        android:layout_below="@+id/signUpButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#2c36bf" />
+</RelativeLayout>
+
+
